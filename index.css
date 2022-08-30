@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap");
+
+:root {
+  /* Color */
+  --clr-dark-blue: hsl(218, 23%, 16%);
+  --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+  --clr-grayish-blue: hsl(217, 19%, 38%);
+  --clr-light-cyan: hsl(193, 38%, 86%);
+  --clr-neon-green: hsl(150, 100%, 66%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* Font size */
+  --fs-title: 11px;
+  --fs-quote: 24px;
+
+  /* Font */
+  --ff-manrope: "Manrope", sans-serif;
+}
+
+/* Utility Class */
+
+.text-white {
+  color: var(--clr-white);
+}
+
+/* ----------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: var(--ff-manrope);
+  font-weight: 800;
+}
+
+body {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 1rem;
+  margin: 0;
+  line-height: 1.5;
+  background-color: var(--clr-dark-blue);
+}
+
+.advice-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 315px;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  background-color: var(--clr-dark-grayish-blue);
+}
+
+@media only screen and (min-width: 1280px) {
+  .advice-card {
+    max-width: 540px;
+    min-height: 364px;
+  }
+}
+
+.advice-card > h4 {
+  color: var(--clr-neon-green);
+  font-size: var(--fs-title);
+  text-transform: uppercase;
+  letter-spacing: 3.46px;
+}
+
+.advice-card > p {
+  color: var(--clr-light-cyan);
+  font-size: var(--fs-quote);
+  line-height: 33px;
+}
+
+.advice-card > .dice {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--clr-neon-green);
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+
+.advice-card > .dice:hover {
+  box-shadow: 0px 0px 40px var(--clr-neon-green);
+  transition: all 0.1s linear;
+}
+
+.advice-card > .divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 2%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-white);
+  text-decoration: none;
+}
