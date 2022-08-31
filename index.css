@@ -45,7 +45,7 @@
   font-weight: 800;
 }
 
-h4,
+h1,
 p {
   margin: 0;
 }
@@ -83,7 +83,7 @@ body {
   }
 }
 
-.advice-card > h4 {
+.advice-card > h1 {
   color: var(--clr-neon-green);
   font-size: var(--fs-title);
   text-transform: uppercase;
