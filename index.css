@@ -15,12 +15,24 @@
 
   /* Font */
   --ff-manrope: "Manrope", sans-serif;
+
+  --line-height: 33px;
+  --letter-spacing: -0.26px;
 }
 
 /* Utility Class */
 
 .text-white {
   color: var(--clr-white);
+}
+
+@media only screen and (min-width: 1280px) {
+  :root {
+    --fs-title: 13px;
+    --fs-quote: 28px;
+    --line-height: 38px;
+    --letter-spacing: -0.3px;
+  }
 }
 
 /* ----------------------------------------------------- */
@@ -31,6 +43,11 @@
   box-sizing: border-box;
   font-family: var(--ff-manrope);
   font-weight: 800;
+}
+
+h4,
+p {
+  margin: 0;
 }
 
 body {
@@ -51,7 +68,7 @@ body {
   justify-content: space-between;
   width: 100%;
   min-height: 315px;
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem;
   text-align: center;
   border-radius: 10px;
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
@@ -61,7 +78,8 @@ body {
 @media only screen and (min-width: 1280px) {
   .advice-card {
     max-width: 540px;
-    min-height: 364px;
+    min-height: 332px;
+    padding: 3rem;
   }
 }
 
@@ -75,7 +93,8 @@ body {
 .advice-card > p {
   color: var(--clr-light-cyan);
   font-size: var(--fs-quote);
-  line-height: 33px;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
 }
 
 .advice-card > .dice {
@@ -102,7 +121,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .attribution {
