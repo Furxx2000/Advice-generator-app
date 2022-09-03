@@ -80,6 +80,7 @@ body {
     max-width: 540px;
     min-height: 332px;
     padding: 3rem;
+    transform: translateY(-1rem);
   }
 }
 
