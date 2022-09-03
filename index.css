@@ -84,7 +84,7 @@ body {
 
 .advice-card > p {
   color: var(--clr-light-cyan);
-  padding-bottom: 0.9rem;
+  padding-bottom: 1rem;
   font-size: var(--fs-quote);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
