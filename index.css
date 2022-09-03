@@ -75,15 +75,6 @@ body {
   background-color: var(--clr-dark-grayish-blue);
 }
 
-@media only screen and (min-width: 1280px) {
-  .advice-card {
-    max-width: 540px;
-    min-height: 332px;
-    padding: 3rem;
-    transform: translateY(-1rem);
-  }
-}
-
 .advice-card > h1 {
   color: var(--clr-neon-green);
   font-size: var(--fs-title);
@@ -93,6 +84,7 @@ body {
 
 .advice-card > p {
   color: var(--clr-light-cyan);
+  padding-bottom: 0.5rem;
   font-size: var(--fs-quote);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
@@ -136,4 +128,17 @@ body {
 .attribution a {
   color: var(--clr-white);
   text-decoration: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .advice-card {
+    max-width: 540px;
+    min-height: 332px;
+    padding: 3rem;
+    transform: translateY(-1rem);
+  }
+
+  .advice-card > h1 {
+    letter-spacing: 4.08px;
+  }
 }
