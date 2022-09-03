@@ -18,6 +18,7 @@
 
   --line-height: 33px;
   --letter-spacing: -0.26px;
+  --border-radius: 10px;
 }
 
 /* Utility Class */
@@ -32,6 +33,7 @@
     --fs-quote: 28px;
     --line-height: 38px;
     --letter-spacing: -0.3px;
+    --border-radius: 15px;
   }
 }
 
@@ -70,7 +72,7 @@ body {
   min-height: 315px;
   padding: 2.5rem 1.5rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
   background-color: var(--clr-dark-grayish-blue);
 }
